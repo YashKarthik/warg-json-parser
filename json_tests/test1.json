@@ -1,0 +1,22 @@
+{
+    "test": [
+        {
+            "name": "baz",
+            "steps": [
+                {
+                    "desc": "spam",
+                    "input": {
+                        "protocol": "UART",
+                        "signal": "0x00",
+                        "channel": "0x00"
+                    },
+                    "output": {
+                        "protocol": "UART",
+                        "expected_signal": "0x00",
+                        "channel": "0x00"
+                    }
+                }
+            ]
+        }
+    ]
+}

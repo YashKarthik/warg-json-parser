@@ -1,0 +1,22 @@
+{
+    "test": [
+        {
+            "name": "foo",
+            "steps": [
+                {
+                    "desc": "bar",
+                    "input": {
+                        "protocol": "SBUS",
+                        "signal": "0x00",
+                        "channel": "0x00"
+                    },
+                    "output": {
+                        "protocol": "SBUS",
+                        "expected_signal": "0x00",
+                        "channel": "0x00"
+                    }
+                }
+            ]
+        }
+    ]
+}
