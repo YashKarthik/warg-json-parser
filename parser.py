@@ -4,7 +4,7 @@ import json
 def read_tests_from_file(file_path: str):
     with open(file_path) as json_stream:
         json_file = json_stream.read()
-        tests = json.loads(json_file)["tests"]
+        tests = json.loads(json_file)
 
         for i, test in enumerate(tests):
             print("Test #", i + 1)
@@ -25,7 +25,7 @@ def read_tests_from_dir(dir_path: str):
         if os.path.isfile(file_path) and file_name.endswith(".json"):
             try:
                 with open(file_path, 'r') as json_stream:
-                    test = json.load(json_stream)["test"][0]
+                    test = json.load(json_stream)
                     tests.append(test)
                     print(f"Parsed {file_name}")
 
